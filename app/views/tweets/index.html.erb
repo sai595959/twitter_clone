@@ -1,0 +1,51 @@
+<div class="container">
+    
+
+
+
+        
+        <div class="row">
+            
+            <div class="col-md-3 col-sm-6">
+                <h1 align="center">自分のアカウント情報とか</h1>    
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <h1 align="center" >いまどうしてる？</h1>
+                <%= render 'form' %>
+                
+                <h1 align="center">tweet一覧</h1>
+                
+                <div class="tweet_index">
+                <% @tweets.reverse_each do |tweet| %>
+                    <div class="row">
+                    <p><%= tweet.content %></p>
+                    <%= link_to "ツイートを編集する", edit_tweet_path(tweet.id),data: { confirm: '本当に編集していいですか？' } %>
+                    <%= link_to 'ブログを削除する', tweet_path(tweet.id), method: :delete,data: { confirm: '本当に削除していいですか？' } %>
+                    </div>
+                <% end %>
+                </div>
+                <br><br>
+                <div class="row" style="text-align: center">
+                    <%= link_to "ツイートする", new_tweet_path %>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <h1 align="center">レコメンドとか</h1>    
+            </div>
+            
+            
+
+
+
+
+
+<br><br>
+
+</div>
+</div>
+
+<div id="page-top-btn" class="page-top-btn">
+    <p><a class="move-page-top" id="move-page-top">▲</a></p>
+</div>
