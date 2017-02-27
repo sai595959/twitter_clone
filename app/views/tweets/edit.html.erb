@@ -1,8 +1,11 @@
 <div class="container">
   <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-    <h1 align="center" >ツイートを編集</h1>
-    <%= render 'form' %>
-    <p align="center"><%= link_to "ツイート一覧画面にもどる", tweets_path %></p>
+    <div class="edit_tweet">
+      <div class="row">
+        <h1 align="center" >ツイートを編集</h1>
+        <%= render 'form' %>
+        <p align="center"><%= link_to "ツイート一覧画面にもどる", tweets_path %></p>
+      </div>
+    </div>
   </div>
 </div>
-

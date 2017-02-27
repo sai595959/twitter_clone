@@ -1,18 +1,75 @@
 // Place all the styles related to the tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.container{
 
+body{
+    background-color: #E9EAED;
 }
 
+.account_info{
+  .row{
+    background-color: white;
+  }
+}
+
+.form_section{
+  .row{
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .tweet_index{
-    .row{
+  .ichiran{
+    background-color: white;
     border-collapse: collapse;
-    border-style: solid;
-    border-width: 1px;
+    border-bottom: solid 1px #8899A6;
+    border-top: solid 1px #8899A6;
+    
+    margin-bottom: 0px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+    .row{
+    background-color: white;
+    border-collapse: collapse;
+    border-bottom: solid 1px #8899A6;
     margin: 0 auto;
     padding: 10px; 
     }
+}
+
+.reco{
+  .row{
+    background-color: white;
+  }
+  li{
+    font-size: medium;
+  }
+}
+
+.new_tweet{
+  .row{
+    background-color: white;
+  }
+}
+
+.edit_tweet{
+  .row{
+    background-color: white;
+  }
+}
+
+.confirm_tweet{
+  p{
+    margin: 10px;
+  }
+  .row{
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .page-top-btn {
@@ -44,11 +101,10 @@
 }
 
 .navbar-default {
-border-bottom: 1px solid #8899A6;  
+    border-bottom: 1px solid #8899A6;  
 }
 .navbar {
-    background-color: transparent;
-    color: white;
+    background-color: white;
     margin-bottom: 0px;
 }
 .navbar-default {

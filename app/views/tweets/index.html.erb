@@ -7,16 +7,33 @@
         <div class="row">
             
             <div class="col-md-3 col-sm-6">
-                <h1 align="center">自分のアカウント情報とか</h1>    
+            <div class="account_info">
+                <div class="row" style="text-align: center">
+                    <h1 align="center">アカウント情報</h1> 
+                    <img src="<%= asset_path "account_image.jpg" %>" class="img-responsive">
+                    <h4>@dive_into_code</h3>
+                    <h3> ツイート:<%= @tweet_count %> </h2>
+                </div>
+                <div class="row" style="text-align: center">
+                    <%= link_to "ツイートする", new_tweet_path %>
+                </div>
+            </div>
             </div>
             
             <div class="col-md-6 col-sm-6">
-                <h1 align="center" >いまどうしてる？</h1>
-                <%= render 'form' %>
                 
-                <h1 align="center">tweet一覧</h1>
+                <div class="form_section">
+                    <div class="row">
+                        <h1 align="center" >いまどうしてる？</h1>
+                        <%= render 'form' %>
+                        <h1 align="center"><%= notice %></h1>
+                    </div>
+                </div>
+                
+                
                 
                 <div class="tweet_index">
+                <h1 align="center" class="ichiran">tweet一覧</h1>
                 <% @tweets.reverse_each do |tweet| %>
                     <div class="row">
                     <p><%= tweet.content %></p>
@@ -26,13 +43,20 @@
                 <% end %>
                 </div>
                 <br><br>
-                <div class="row" style="text-align: center">
-                    <%= link_to "ツイートする", new_tweet_path %>
-                </div>
+
             </div>
             
             <div class="col-md-3 col-sm-6">
-                <h1 align="center">レコメンドとか</h1>    
+                <div class="reco">
+                    <div class="row">
+                        <h1 align="center">レコメンド</h1> 
+                            <ul style="list-style:none">
+                              <li><a href="https://diveintocode.jp/">DIVE INTO CODE</a></li>
+                              <li><a href="https://diveintocode.jp/diver/">DIVER</a></li>
+
+                            </ul>
+                    </div>
+                </div>
             </div>
             
             

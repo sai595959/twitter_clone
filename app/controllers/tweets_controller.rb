@@ -11,6 +11,8 @@ class TweetsController < ApplicationController
     Tweet.order("id")
     @tweets = Tweet.all
     
+    @tweet_count = Tweet.count
+    
   end
   
   def new
