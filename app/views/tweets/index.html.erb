@@ -38,7 +38,7 @@
                     <div class="row">
                     <p><%= tweet.content %></p>
                     <%= link_to "ツイートを編集する", edit_tweet_path(tweet.id),data: { confirm: '本当に編集していいですか？' } %>
-                    <%= link_to 'ブログを削除する', tweet_path(tweet.id), method: :delete,data: { confirm: '本当に削除していいですか？' } %>
+                    <%= link_to 'ツイートを削除する', tweet_path(tweet.id), method: :delete,data: { confirm: '本当に削除していいですか？' } %>
                     </div>
                 <% end %>
                 </div>
